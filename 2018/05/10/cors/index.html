@@ -5,15 +5,20 @@
   
 
   
-  <title>Hexo</title>
+  <title>cors | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="前后端分离 前端和后端代码分别部署在不同的服务器。 后端只需向前端提供json接口，接口只需返回请求正确或者失败原因。 前端在开发过程中不必等待后端提供接口，可先自行约定接口数据模型。 哪些网站适合前后端分离： 网站前端变化远比端变化频繁 网站前端团队和后端团队技能点差异大 网站前端效果绚丽/跨设备兼容要求高   前后端分离主要有如下技术难点 跨域请求 身份认证    浏览器的同源策略 如果协议，">
+<meta name="keywords" content="cors 跨域解决方案">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cors">
+<meta property="og:url" content="http://yoursite.com/2018/05/10/cors/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="前后端分离 前端和后端代码分别部署在不同的服务器。 后端只需向前端提供json接口，接口只需返回请求正确或者失败原因。 前端在开发过程中不必等待后端提供接口，可先自行约定接口数据模型。 哪些网站适合前后端分离： 网站前端变化远比端变化频繁 网站前端团队和后端团队技能点差异大 网站前端效果绚丽/跨设备兼容要求高   前后端分离主要有如下技术难点 跨域请求 身份认证    浏览器的同源策略 如果协议，">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-10T14:52:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="cors">
+<meta name="twitter:description" content="前后端分离 前端和后端代码分别部署在不同的服务器。 后端只需向前端提供json接口，接口只需返回请求正确或者失败原因。 前端在开发过程中不必等待后端提供接口，可先自行约定接口数据模型。 哪些网站适合前后端分离： 网站前端变化远比端变化频繁 网站前端团队和后端团队技能点差异大 网站前端效果绚丽/跨设备兼容要求高   前后端分离主要有如下技术难点 跨域请求 身份认证    浏览器的同源策略 如果协议，">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +65,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="photo-cors" class="article article-type-photo" itemscope itemprop="blogPost">
+        <section id="main"><article id="photo-cors" class="article article-type-photo" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/05/10/cors/" class="article-date">
   <time datetime="2018-05-10T14:50:43.000Z" itemprop="datePublished">2018-05-10</time>
@@ -75,8 +78,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/10/cors/">cors</a>
+    <h1 class="article-title" itemprop="name">
+      cors
     </h1>
   
 
@@ -213,56 +216,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/05/10/hello-world/" class="article-date">
-  <time datetime="2018-05-10T14:26:27.000Z" itemprop="datePublished">2018-05-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/10/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2018/05/10/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/10/hello-world/" data-id="cjh0nj2450000en540tg440bl" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
